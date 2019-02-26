@@ -3,7 +3,8 @@
         <[int][Version][210]>
         <[vec32array][ContactSpheres][ (1.472 -0.075 -0.757 0.04) (-0.133 0.92 -0.788 0.04) (-0.133 -0.92 -0.788 0.04) ]>
         <[string8][DisplayName][Socata Rallye MS.893E]>
-        <[string8][DescriptionTextEN][The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginning in the 1960s. It was originally by Morane-Saulnier as the MS.880. It was eventually replaced in production by the Socata TB series in the 1980s, but continued in production in Poland under licence by PZL as the PZL Koliber.#Converted from FlightGear by krzysk(at)wp.pl . 3D model by Patrice Poly (3D, FDM), Beber (Sounds).]>
+        <[string8][DescriptionTextEN][The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginning in the 1960s. It was originally by Morane-Saulnier as the MS.880. It was eventually replaced in production by the Socata TB series in the 1980s, but continued in production in Poland under licence by PZL as the PZL Koliber.
+		Converted from FlightGear by Krzysztof Kaniewski. 3D model by Patrice Poly (3D, FDM), Beber (Sounds).]>
 		<[float64][WingSpan][9.6]>
 		<[float64][Mass][570.2]>
 		<[float64][MaximumSpeed][78.0]>
