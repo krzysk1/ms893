@@ -13,3 +13,5 @@ Installation
 
 Tips:
 AirBrake button - turn on/off engine
+
+All resources are available here: https://github.com/FGMEMBERS/rallye-MS893
