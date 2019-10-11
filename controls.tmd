@@ -196,7 +196,7 @@
                 <[float64][Radius][0.009]>
                 <[float64][Length][0.033]>
             >
-			// Mixture lever
+			// mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][ServoMixture.Output]>
                 <[float64][Scaling][-1.745329]>
