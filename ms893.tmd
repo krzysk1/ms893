@@ -1448,7 +1448,7 @@
                 <[float64][Pos1][0.15]>
             >
             <[movinggraphics][CanopyFrame][]
-                <[string8][GeometryList][ CanopyBack ]>
+                <[string8][GeometryList][ CanopyBack CanopyPlexi CanopyInt ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][ServoCanopy.Output]>
@@ -1456,15 +1456,7 @@
                 <[float64][Pos0][1.3]>
                 <[float64][Pos1][-1.3]>
             >
-            <[movinggraphics]CanopyPlexi][]
-                <[string8][GeometryList][ CanopyPlexi CanopyInt ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][ServoCanopy.Output]>
-                <[tmvector3d][Axis][0.998554 0.029406 0.044995]>
-                <[float64][Pos0][1.3]>
-                <[float64][Pos1][-1.3]>
-            >
+
             // Propeller
             <[propellergraphics][CompletePropellerDisk][]
                 <[string8][GeometryList][ Propdisc ]>
