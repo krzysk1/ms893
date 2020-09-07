@@ -1006,7 +1006,7 @@
                 <[string8][Input0][Magnetos.Output]>
                 <[string8][Input1][4]>
             >
-            <[output_free][StarterActiveOutput][][]
+            <[output_free][StarterActiveOutput][]
                 <[string8][Input][StarterActive.Output]>
             >
             // starter
