@@ -1,4 +1,5 @@
 <[file][][]
+
 	//-------------------------------------
 	// Plane: Socata Rallye MS893E
 	// Converted from FlightGear by krzysk (at) wp.pl
@@ -241,6 +242,12 @@
                 <[string8][Body][FrontGear]>
                 <[tmvector3d][R0][1.477 -0.07424 -0.6525]>
             >
+            <[output][GroundRollSpeedFrontWheel][]
+                <[string8][Input][FrontWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadFrontWheel][]
+                <[string8][Input][FrontWheelHull.Load]>
+            >			
             <[wheel][LeftWheelHull][]
                 <[float64][K][119700]>
                 <[float64][D][1026]>
@@ -253,6 +260,12 @@
                 <[string8][InputBrake][LeftBrakeInput.Output]>
                 <[float64][BrakeStrength][0.6]>
             >
+            <[output][GroundRollSpeedLeftWheel][]
+                <[string8][Input][LeftWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadLeftWheel][]
+                <[string8][Input][LeftWheelHull.Load]>
+            >			
             <[wheel][RightWheelHull][]
                 <[float64][K][119700]>
                 <[float64][D][1026]>
@@ -264,18 +277,6 @@
                 <[tmvector3d][R0][-0.1308 -0.923 -0.6278]>
                 <[string8][InputBrake][RightBrakeInput.Output]>
                 <[float64][BrakeStrength][0.6]>
-            >
-            <[output][GroundRollSpeedFrontWheel][]
-                <[string8][Input][FrontWheelHull.Speed]>
-            >
-            <[output][GroundRollLoadFrontWheel][]
-                <[string8][Input][FrontWheelHull.Load]>
-            >
-            <[output][GroundRollSpeedLeftWheel][]
-                <[string8][Input][LeftWheelHull.Speed]>
-            >
-            <[output][GroundRollLoadLeftWheel][]
-                <[string8][Input][LeftWheelHull.Load]>
             >
             <[output][GroundRollSpeedRightWheel][]
                 <[string8][Input][RightWheelHull.Speed]>
@@ -1235,28 +1236,28 @@
             <[graphics_pointlight][LeftWingTipLight][]
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
-                <[tmvector3d][R0][ 0.3984 4.84 0.5503 ]>
+                <[tmvector3d][R0][ 0.3984 4.85 0.5503 ]>
                 <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
                 <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
-                <[float64][Brightness][ 1.0 ]>
+                <[float64][Brightness][ 3.0 ]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
             >
             <[graphics_pointlight][RightWingTipLight][]
                 <[uint32][PositionID][RightWing.R]>
                 <[uint32][OrientationID][RightWing.Q]>
-                <[tmvector3d][R0][ 0.3984 -4.84 0.5503 ]>
+                <[tmvector3d][R0][ 0.3984 -4.85 0.5503 ]>
                 <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
                 <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
-                <[float64][Brightness][ 1.0 ]>
+                <[float64][Brightness][ 3.0 ]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
             >
             <[graphics_pointlight][TailLight][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[tmvector3d][R0][ -4.6 0.0 1.749 ]>
+                <[tmvector3d][R0][ -4.61 0.0 1.749 ]>
                 <[tmvector3d][X0][ -1.0 0.0 0.0 ]>
                 <[tmvector3d][Color][ 1.0 1.0 1.0 1.0 ]>
-                <[float64][Brightness][1.0]>
+                <[float64][Brightness][3.0]>
                 <[float64][ConeCenter][0.2]>
                 <[float64][ConeCutoff][-0.2]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
@@ -1289,7 +1290,7 @@
                 <[float64][Size][0.02]>
                 <[float64][ConeCenter][0.0]>
                 <[float64][ConeCutoff][-0.5]>
-                <[float64][Brightness][10.0]>
+                <[float64][Brightness][15.0]>
             >
             <[graphics_pointlight][RightStrobeLight][]
                 <[uint32][PositionID][RightWing.R]>
@@ -1301,7 +1302,7 @@
                 <[float64][Size][0.02]>
                 <[float64][ConeCenter][0.0]>
                 <[float64][ConeCutoff][-0.5]>
-                <[float64][Brightness][10.0]>
+                <[float64][Brightness][15.0]>
             >
 
             // beacon light
@@ -1327,8 +1328,8 @@
                 <[float64][ConeCutoff][-0.6]>
                 <[tmvector3d][Color][ 1.0 0.4 0.0 1.0 ]>
                 <[string8][InputModulation][BeaconSwitched.Output]>
-                <[float64][Size][0.03]>
-                <[float64][Brightness][3.0]>
+                <[float64][Size][0.05]>
+                <[float64][Brightness][5.0]>
             >
 
             // surfaces
@@ -1864,12 +1865,12 @@
                 <[float64][Pos0][0.001]>
                 <[float64][Pos1][-0.001]>
             >
-            <[hingedbodygraphics][tc_Airplane_2][]
+            <[hingedbodygraphics][Turn_Airplane][]
                 <[string8][GeometryList][ Airplane ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][RateOfTurn.Output]>
-				<[float64][AngleMax][-1.392527]>
+				<[float64][AngleMax][-0.8]>
                 <[tmvector3d][Axis][-0.997564 0 -0.069756]>
                 <[tmvector3d][Pivot][0.577 0.318 0.451]>
             >
@@ -1879,7 +1880,7 @@
                 <[string8][GeometryList][ Ball ]>
                 <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][ 0.5812 0.3179 0.7382 ]>
-                <[float64][AngleMax][0.17]>
+                <[float64][AngleMax][0.06]>
                 <[string8][AngleID][BalanceIndicatorDeflection.Output]>
             >			
             <[hingedbodygraphics][hi_Face_3][]
@@ -1893,7 +1894,7 @@
             <[hingedbodygraphics][hi_HdgBug_5][]
                 <[string8][GeometryList][ HdgBug ]>
                 <[uint32][AngleID][AutopilotTargetHeading.Output]>
-                <[tmvector3d][Axis][0.997564 0 0.069756]>
+                <[tmvector3d][Axis][0.997564 0 0.069756]>0
                 <[tmvector3d][Pivot][0.576 0.236 0.451]>
                 <[string8][Graphics][hi_Face_3]>
             >
@@ -4300,7 +4301,7 @@
             >
             <[soundmapping][FlightVolume][]
                 <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (10.0 0.0) (15.0 0.5) (100.0 1.5) (200.0 2.0) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (10.0 0.0) (15.0 0.3) (100.0 1.0) (200.0 1.5) ]>
             >
             <[soundmapping][FlightPitch][]
                 <[string8][Input][Airspeed.Output]>
@@ -4472,22 +4473,22 @@
 
             // wheels
             <[soundinput][GroundRollLoadFront][]
-                <[uint32][InputID][GroundRollLoadFront.Output]>
+                <[uint32][InputID][GroundRollLoadFrontWheel.Output]>
             >
             <[soundinput][GroundRollSpeedFront][]
-                <[uint32][InputID][GroundRollSpeedFront.Output]>
+                <[uint32][InputID][GroundRollSpeedFrontWheel.Output]>
             >
             <[soundinput][GroundRollLoadLeft][]
-                <[uint32][InputID][GroundRollLoadLeft.Output]>
+                <[uint32][InputID][GroundRollLoadLeftWheel.Output]>
             >
             <[soundinput][GroundRollSpeedLeft][]
-                <[uint32][InputID][GroundRollSpeedLeft.Output]>
+                <[uint32][InputID][GroundRollSpeedLeftWheel.Output]>
             >
             <[soundinput][GroundRollLoadRight][]
-                <[uint32][InputID][GroundRollLoadRight.Output]>
+                <[uint32][InputID][GroundRollLoadRightWheel.Output]>
             >
             <[soundinput][GroundRollSpeedRight][]
-                <[uint32][InputID][GroundRollSpeedRight.Output]>
+                <[uint32][InputID][GroundRollSpeedRightWheel.Output]>
             >
             <[soundmapping][GroundRollFactorFront][]
                 <[string8][Input][GroundRollLoadFront.Output]>
@@ -4495,11 +4496,11 @@
             >
             <[soundmapping][GroundRollFactorLeft][]
                 <[string8][Input][GroundRollLoadLeft.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1000.0 1.0) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (500.0 1.0) ]>
             >
             <[soundmapping][GroundRollFactorRight][]
                 <[string8][Input][GroundRollLoadRight.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1000.0 1.0) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (500.0 1.0) ]>
             >
             <[soundmapping][GroundRollFactorFront1][]
                 <[string8][Input][GroundRollSpeedFront.Output]>
@@ -4540,22 +4541,22 @@
             <[soundloop][GroundRollFrontLoop][]
                 <[string8][InputVolume][GroundRollVolumeFront.Output]>
                 <[string8][InputPitch][GroundRollPitchFront.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID][FrontGear.R]>
+                <[uint32][VelocityID][FrontGear.V]>
                 <[string8][SoundFile][roll_runway2.wav]>
             >
             <[soundloop][GroundRollLeftLoop][]
                 <[string8][InputVolume][GroundRollVolumeLeft.Output]>
                 <[string8][InputPitch][GroundRollPitchLeft.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID][LeftGear.R]>
+                <[uint32][VelocityID][LeftGear.V]>
                 <[string8][SoundFile][roll_runway2.wav]>
             >
             <[soundloop][GroundRollRightLoop][]
                 <[string8][InputVolume][GroundRollVolumeRight.Output]>
                 <[string8][InputPitch][GroundRollPitchRight.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID][RightGear.R]>
+                <[uint32][VelocityID][RightGear.V]>
                 <[string8][SoundFile][roll_runway2.wav]>
             >
 
