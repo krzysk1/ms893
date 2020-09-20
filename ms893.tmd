@@ -1497,18 +1497,40 @@
                 <[float64][Radius][0.501916]>
                 <[string8][InputPitch][0.0]>
             >
+			
+			
             <[graphics_input][LeftYokeHidden][]
                 <[uint32][InputID][LeftYokeHidden.Output]>
                 <[float64][Scaling][0.4]>
+            >			
+            <[graphics_input][StickAileronTransformInput][]
+                <[uint32][InputID][ServoAileronPosition.Output]>
+                <[float64][Scaling][2.2037]>
             >
-            <[movinggraphics][YokesBase][]
-                <[string8][GeometryList][ MancheGaucheTube MancheDroitTube ]>
+            <[graphics_input][StickBaseTransformInput][]
+                <[uint32][InputID][ServoElevatorPosition.Output]>
+                <[float64][Scaling][1.0]>
+            >
+            <[graphics_mapping][StickBaseTransformMapping][]
+                <[string8][Input][StickBaseTransformInput.Output]>
+                <[tmvector2d][Map][(-1.0 -0.08) (0.0 0.0) (1.0 0.03) ]>
+            >
+            <[graphics_mix][LeftStickBaseTransformMix][]
+                <[uint32][Input0][StickBaseTransformMapping.Output]>
+                <[uint32][Input1][LeftYokeHidden.Output]>
+                <[uint32][Weight0][1.0]>
+                <[uint32][Weight1][1.0]>
+                <[uint32][Offset][0.0]>
+            >			
+            <[graphics_translation][LeftStickBaseTransform][]
+                <[string8][Input][LeftStickBaseTransformMix.Output]>
+                <[tmvector3d][Axis][0.997564 0 0.069754]>
+            >
+            <[rigidbodygraphics][LeftYokesBase][]
+                <[string8][GeometryList][ MancheGaucheTube ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][ServoElevatorPosition.Output]>
-                <[tmvector3d][Axis][0.997564 0 0.069754]>
-                <[float64][Pos0][-0.08]>
-                <[float64][Pos1][0.03]>
+                <[string8][InputTransform][LeftStickBaseTransform.Output]>
             >
             <[hingedbodygraphics][LeftYoke][]
                 <[string8][GeometryList][ MancheGauche ]>
@@ -1516,15 +1538,36 @@
                 <[float64][AngleMax][-0.610865]>
                 <[tmvector3d][Axis][0.997564 0 -0.069754]>
                 <[tmvector3d][Pivot][0.60988 0.25055 0.378627]>
-                <[string8][Graphics][YokesBase]>
+                <[string8][Graphics][LeftYokesBase]>
             >
+            <[graphics_input][RightYokeHidden][]
+                <[uint32][InputID][RightYokeHidden.Output]>
+                <[float64][Scaling][0.4]>
+            >
+            <[graphics_mix][RightStickBaseTransformMix][]
+                <[uint32][Input0][StickBaseTransformMapping.Output]>
+                <[uint32][Input1][RightYokeHidden.Output]>
+                <[uint32][Weight0][1.0]>
+                <[uint32][Weight1][1.0]>
+                <[uint32][Offset][0.0]>
+            >			
+            <[graphics_translation][RightStickBaseTransform][]
+                <[string8][Input][RightStickBaseTransformMix.Output]>
+                <[tmvector3d][Axis][0.997564 0 0.069754]>
+            >
+            <[rigidbodygraphics][RightYokesBase][]
+                <[string8][GeometryList][ MancheDroitTube ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][RightStickBaseTransform.Output]>
+            >						
             <[hingedbodygraphics][RightYoke][]
                 <[string8][GeometryList][ MancheDroit ]>
                 <[uint32][AngleID][ServoAileronPosition.Output]>
                 <[float64][AngleMax][-0.610865]>
                 <[tmvector3d][Axis][0.997564 0 -0.069754]>
                 <[tmvector3d][Pivot][0.579953 -0.252888 0.376535]>
-                <[string8][Graphics][YokesBase]>
+                <[string8][Graphics][RightYokesBase]>
             >
             <[hingedbodygraphics][PilotLeftRuderPedal][]
                 <[string8][GeometryList][ PilotLRudder CopilotLRudder ]>
