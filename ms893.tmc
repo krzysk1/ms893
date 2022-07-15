@@ -1,34 +1,35 @@
 <[file][][]
     <[object][][]
-        <[int][Version][210]>
+        <[int][Version][220]>
         <[vec32array][ContactSpheres][ (1.472 -0.075 -0.757 0.04) (-0.133 0.92 -0.788 0.04) (-0.133 -0.92 -0.788 0.04) ]>
-        <[string8][DisplayName][Socata Rallye MS.893E]>
-        <[string8][DescriptionTextEN][The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginning in the 1960s. It was originally by Morane-Saulnier as the MS.880. It was eventually replaced in production by the Socata TB series in the 1980s, but continued in production in Poland under licence by PZL as the PZL Koliber.
-		Converted from FlightGear by Krzysztof Kaniewski. 3D model by Patrice Poly (3D, FDM), Beber (Sounds).]>
+        <[string8][ICAO][RALL]>
+        <[string8][DisplayName][Rallye MS.893E]>
+        <[string8][DisplayNameFull][Socata Rallye MS.893E]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginning in the 1960s. It was originally by Morane-Saulnier as the MS.880. It was eventually replaced in production by the Socata TB series in the 1980s, but continued in production in Poland under licence by PZL as the PZL Koliber. Converted from FlightGear by Krzysztof Kaniewski. 3D model by Patrice Poly (3D, FDM), Beber (Sounds).]>
+            >
+        >
 		<[float64][WingSpan][9.6]>
-		<[float64][Mass][570.2]>
-		<[float64][MaximumSpeed][78.0]>
-		<[float64][MinimumSpeed][25.0]>
-        <[float64][ApproachSpeed][25.0]>
-        <[float64][CruiseSpeed]  [67.5]>
-		<[tmvector2d][NormalSpeedRange][ 25.0 67.5 ]>
-		<[tmvector2d][CautionSpeedRange][ 67.5 78.0 ]>
-		<[tmvector2d][FlapSpeedRange][ 25.0 43.5 ]>
+		<[float64][MaximumAirspeed][78.0]>
+		<[float64][MinimumAirspeed][25.0]>
+        <[float64][ApproachAirspeed][25.0]>
+        <[float64][CruiseAirspeed]  [67.5]>
+		<[tmvector2d][NormalAirspeedRange][ 25.0 67.5 ]>
+		<[tmvector2d][CautionAirspeedRange][ 67.5 78.0 ]>
+		<[tmvector2d][FlapAirspeedRange][ 25.0 43.5 ]>
         <[float64][MaximumAltitude][4800]>
         <[float64][CruiseAltitude] [4000]>
-        <[float64][QSpan][9.6]>
-        <[float64][QMass][818.9]>
-        <[float64][QSpeed][113]>
-        <[float64][QPower][134225.8]>
-        <[float64][QThrust][0]>
-        <[float64][QRange][300000.0]>
-        <[float64][QRatio][0.0]>
-        <[float64][QBuild][1300]>
-        <[float64][QVirgin][1972]>
+        <[float64][MaximumTakeoffMass][818.9]>
+        <[float64][EnginePower][134225.8]>
+        <[float64][MaximumRange][300000.0]>
+        <[uint][UnitsBuilt][1300]>
+        <[uint][EngineCount][1]>
+        <[uint][Year][1972]>
         <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.13962) (1.0 0.5236) ]>
         <[string8][FlapQualifier][]>			
-		<[bool][Airplane][true]>
-		<[bool][Flaps][true]>
+        <[string8][Tags][ airplane piston general_aviation gear flaps ]>
 		<[string8][Pilot][pilot_daniel]>
     >
 >
