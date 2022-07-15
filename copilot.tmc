@@ -38,10 +38,9 @@
            >
         >
         <[string8][AutoPilotType][BASIC]>
-        <[bool][Aerobatic][false]>
-        <[bool][Fighter][false]>
-        <[bool][FlyByWire][false]>
-        <[bool][TailDragger][false]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][GeneralAviation][true]>
         <[bool][ParkingBrake][true]>
         <[string8][AutoThrottleType][MOVING]>
         <[float64][ThrottleTrimFactor][0.5]>
