@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (1.472 -0.075 -0.757 0.04) (-0.133 0.92 -0.788 0.04) (-0.133 -0.92 -0.788 0.04) ]>
         <[string8][ICAO][RALL]>
-        <[string8][DisplayName][SOCATA Rallye]>
+        <[string8][DisplayName][Rallye]>
         <[string8][DisplayNameFull][Socata Rallye MS.893E]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
