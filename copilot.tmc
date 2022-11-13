@@ -2,10 +2,10 @@
     <[hints][][]
         // rallye-MS893
         <[float64][MaximumTakeOffMass][570.2]>
-        <[float64][WingSpan][9.56]>
-        <[float64][WingArea][18.5]>
-        <[float64][HeightOffset][-0.8249]>
-        <[float64][NoseWheelPositionX][2.285]>
+        <[float64][WingSpan][9.61]>
+        <[float64][WingArea][12.6]>
+        <[float64][HeightOffset][-0.788]>
+        <[float64][NoseWheelPositionX][1.472]>
         <[float64][ApproachSpeed][46.3]>
         <[float64][PatternSpeed][61.7]>
         <[float64][InitialClimbSpeed][51.4]>
@@ -55,5 +55,7 @@
         <[float64][YawTrimFactor][0.1]>
         <[float64][FlareHeightScaling][0.5]>
         <[float64][FlareExpectedNoseDrop][0.1]>
+        <[float64][GainSideSlipRoll][2.0]>
+        <[float64][StarterMaximumTime][3.0]>
     >
 >

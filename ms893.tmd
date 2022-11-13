@@ -28,23 +28,26 @@
                 <[tmvector3d][Direction][0.9920 0.0 -0.1259]>
                 <[bool][InCockpit][true]>
             >
-            <[camera][CameraLeftSide][]
+            <[camera][CameraCoPilot][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -0.072 -0.253 0.675]>
+                <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][cockpit copilot right]>
+            >
+            <[camera][CameraRearSeat][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -0.8 -0.15 0.62 ]>
+                <[tmvector3d][Direction][ 0.3 -0.8 -0.25 ]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][cabin window right wing]>
+            >
+            <[camera][CameraLeftWing][]
+                <[string8][Body][LeftWing]>
+                <[tmvector3d][R0][ 0.8 8.0 0.9 ]>
+                <[tmvector3d][Direction][ -0.3 -0.999 0.0 ]>
+                <[bool][InCockpit][false]>
                 <[string8][Tags][left wing]>
-                <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 5.585 4.782 -1.862 ]>
-                <[tmvector3d][Direction][ -0.736 -0.63 0.245 ]>
-            >
-            <[camera][CameraRightSide][]
-                <[string8][Tags][right wing]>
-                <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -7.09 -4.782 1.818 ]>
-                <[tmvector3d][Direction][ 0.811 0.547 -0.208 ]>
-            >
-            <[camera][CameraFront][]
-                <[string8][Tags][front]>
-                <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 7.585 2.793 2.793 ]>
-                <[tmvector3d][Direction][ -0.887 -0.327 -0.327 ]>
             >
 
             // Rigidbodies
@@ -2459,7 +2462,7 @@
                 <[string8][GeometryList][ PilotBody PilotHead ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][12]>
+                <[uint32][ShowInside][CameraCoPilot CameraRearSeat]>
                 <[bone_array][Bones][]
                  <[bone][element][0]
                      <[string8][Name][Bip01]>

@@ -3,21 +3,25 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (1.472 -0.075 -0.757 0.04) (-0.133 0.92 -0.788 0.04) (-0.133 -0.92 -0.788 0.04) ]>
         <[string8][ICAO][RALL]>
-        <[string8][DisplayName][Rallye]>
+        <[string8][DisplayName][Rallye MS.893E]>
         <[string8][DisplayNameFull][Socata Rallye MS.893E]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
                 <[string8][Text][The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginning in the 1960s. It was originally by Morane-Saulnier as the MS.880. It was eventually replaced in production by the Socata TB series in the 1980s, but continued in production in Poland under licence by PZL as the PZL Koliber. Converted from FlightGear by Krzysztof Kaniewski. 3D model by Patrice Poly (3D, FDM), Beber (Sounds).]>
             >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die viersitzige einmotorige Morane-Saulnier Rallye ist ein Kleinflugzeug. Der freitragende Ganzmetall-Tiefdecker wird vor allem als Schleppflugzeug für Schleppbanner und Segelflugzeuge eingesetzt. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Patrice Poly (3D, FDM), Beber (Sounds).]>
+			>
         >
 		<[float64][WingSpan][9.6]>
 		<[float64][MaximumAirspeed][78.0]>
-		<[float64][MaximumSpeed][78.0]>		
+		<[float64][MaximumSpeed][78.0]>
 		<[float64][MinimumAirspeed][25.0]>
         <[float64][ApproachAirspeed][25.0]>
         <[float64][CruiseAirspeed][67.5]>
-        <[float64][CruiseSpeed][87.5]>		
+        <[float64][CruiseSpeed][87.5]>
 		<[tmvector2d][NormalAirspeedRange][ 25.0 67.5 ]>
 		<[tmvector2d][CautionAirspeedRange][ 67.5 78.0 ]>
 		<[tmvector2d][FlapAirspeedRange][ 25.0 43.5 ]>
@@ -30,8 +34,8 @@
         <[uint][EngineCount][1]>
         <[uint][Year][1972]>
         <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.13962) (1.0 0.5236) ]>
-        <[string8][FlapQualifier][]>			
-        <[string8][Tags][ airplane piston general_aviation gear flaps ]>
+        <[string8][FlapQualifier][]>
+        <[string8][Tags][ airplane piston general_aviation gear trainer flaps ]>
 		<[string8][Pilot][pilot_daniel]>
     >
 >
