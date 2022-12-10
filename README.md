@@ -4,13 +4,18 @@ The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginni
 This is free add-on for AeroflyFS4 developed by Krzysztof Kaniewski, 2019, 2022
 3D model by Patrice Poly "WooT" (3D, FDM). Thanks to him.
 
- Some features may not work as intended and this aircraft could crash your aeroflyFS. 
+ Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
 
-Installation
+# Installation
 
 1. Unzip file and move the folder "ms893" to C:\Users\~\Documents\Aerofly FS4\aircraft.
 
+# Uninstall
+
+1. Delete the folder "ms893".
+
+# Resources
 
 All resources are available here: https://github.com/FGMEMBERS/rallye-MS893
 

@@ -4539,6 +4539,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][prop1_inn.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][2.1 0.0 0.4]>				
             >
             <[soundloop][RPMWindLoopExt][]
                 <[string8][InputVolume][RPMVolumeWind.Output]>
@@ -4547,6 +4548,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][prop1.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][2.1 0.0 0.4]>				
             >
 
             // starter cranking
@@ -4569,6 +4571,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][coughing.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.8 0.0 0.4]>				
             >
             <[sound_multi][IgnitionSoundExt][]
                 <[string8][InputTrigger][IgnitionSoundInput.Output]>
@@ -4578,6 +4581,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][star1.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.8 0.0 0.4]>				
             >
 
             // engine loop
@@ -4611,6 +4615,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1_inn.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.8 0.0 0.4]>				
             >
             <[soundloop][RPMIdleLoopExt][]
                 <[string8][InputVolume][RPMVolumeIdle.Output]>
@@ -4619,6 +4624,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1_out.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.8 0.0 0.4]>				
             >
             <[soundmultiply][RPMVolumeRunInt][]
                 <[string8][Input0][RPMVolumeRun.Output]>
@@ -4631,6 +4637,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1_inn.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.8 0.0 0.4]>			
             >
             <[soundloop][RPMRunLoopExt][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
@@ -4639,6 +4646,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1_out.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.8 0.0 0.4]>				
             >
 
             // wheels
