@@ -2037,20 +2037,21 @@
                 <[float64][Scaling][0.06]>
                 <[string8][InputID][BalanceIndicatorDeflection.Output]>
             >
-            <[hingedbodygraphics][hi_Face_3][]
+            <[hingedbodygraphics][hi_Face][]
                 <[string8][GeometryList][ HiFace ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][HeadingAngle.Output]>
-                <[tmvector3d][Axis][ -0.997564 0.0 -0.069756 ]>
+                <[tmvector3d][Axis][ 0.997564 0.0 0.069756 ]>
                 <[tmvector3d][Pivot][0.576 0.236 0.451]>
+                <[float64][Offset][-1.727876]>				
             >
-            <[hingedbodygraphics][hi_HdgBug_5][]
+            <[hingedbodygraphics][hi_HdgBug][]
                 <[string8][GeometryList][ HdgBug ]>
                 <[uint32][InputID][AutopilotTargetHeading.Output]>
                 <[tmvector3d][Axis][ -0.997564 0.0 -0.069756 ]>
                 <[tmvector3d][Pivot][0.576 0.236 0.451]>
-                <[string8][Graphics][hi_Face_3]>
+                <[string8][Graphics][hi_Face]>
             >
             <[graphics_input][vsi_Needle_2Input][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
